@@ -1,40 +1,98 @@
 <!DOCTYPE html>
+<!-- html start: __________________________________________________________ -->
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <!-- noui slider styles: -->
-  <link rel='StyleSheet' href='style/nouislider.min.css'>
-  <!-- local styles: -->
-  <link rel='StyleSheet' href='style/style.css'>
-  <!-- pako compression library : https://github.com/nodeca/pako/ -->
-  <script src='js/pako_inflate.min.js' charset='utf-8'></script>
-  <!-- nouislider range slider library : https://refreshless.com/nouislider/: -->
-  <script src='js/nouislider.min.js' charset='utf-8'></script>
-  <!-- plotly plotting library : https://github.com/plotly/plotly.js/ -->
-  <script src='js/plotly_contour_scatter3d.min.js' charset='utf-8'></script>
-  <!-- local plotting code: -->
-  <script src='js/config.js' charset='utf-8'></script>
-  <script src='js/plot.min.js' charset='utf-8' defer></script>
-</head>
-<body>
-  <!-- main container: -->
-  <div id='container000'>
-    <!-- selection container: -->
-    <div id='container010'>
-      <!-- plot type selection: -->
-      <div id='select000'>
+  <!-- head start:_________________________________________________________ -->
+  <head>
+    <meta http-equiv="content-type"
+          content="text/html; charset=UTF-8;charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"/>
+    <meta charset="UTF-8">
+    <!-- title: ___________________________________________________________ -->
+    <title></title>
+    <!-- styles: __________________________________________________________ -->
+    <!-- noui slider:                                                       -->
+    <link rel='StyleSheet'
+          href='css/nouislider.min.css'>
+    <!-- local styles:                                                      -->
+    <link rel='StyleSheet'
+          href='css/site.css'>
+    <!-- scripts: _________________________________________________________ -->
+    <!-- pako compression : https://github.com/nodeca/pako/                 -->
+    <script src='js/pako_inflate.min.js'
+            charset='utf-8'>
+    </script>
+    <!-- nouislider slider : https://refreshless.com/nouislider/:           -->
+    <script src='js/nouislider.min.js'
+            charset='utf-8'>
+    </script>
+    <!-- plotly plotting : https://github.com/plotly/plotly.js/             -->
+    <script src='js/plotly_contour_scatter3d.min.js'
+            charset='utf-8'>
+    </script>
+    <!-- local plotting code:                                               -->
+    <script src='js/config.js'
+            charset='utf-8'>
+    </script>
+    <script src='js/plot.min.js'
+            charset='utf-8'
+            defer>
+    </script>
+  <!-- head end:___________________________________________________________ -->
+  </head>
+  <!-- body start: ________________________________________________________ -->
+  <body>
+    <!-- container start: _________________________________________________ -->
+    <div id="container"
+         class="container column">
+      <!-- header: ________________________________________________________ -->
+      <div id="header"
+           class="header row flex_center flex_no_grow">
+        <img id="header_image"
+             class="header_image"
+             src="img/volcano.png">
       </div>
-      <!-- plot data selection: -->
-      <div id='select010'>
+      <!-- navigation: ____________________________________________________ -->
+      <div id="navigation"
+           class="navigation row flex_no_grow">
       </div>
+      <!-- content: _______________________________________________________ -->
+      <div id="content"
+           class="content column">
+
+        <!-- container start: _____________________________________________ -->
+        <div id='container000'>
+          <!-- selection container: -->
+          <div id='container010'>
+            <!-- plot type selection: -->
+            <div id='select000'>
+            </div>
+            <!-- plot data selection: -->
+            <div id='select010'>
+            </div>
+          </div>
+          <!-- title div: -->
+          <div id='title000'>
+          </div>
+          <!-- plot container: -->
+          <div id='container020'>
+          </div>
+        <!-- container end: _______________________________________________ -->
+        </div>
+
+      <!-- content end: ___________________________________________________ -->
+      </div>
+      <!-- footer: ________________________________________________________ -->
+      <div id="footer"
+           class="footer row flex_no_grow">
+        <div id="footer_text"
+             class="footer_text flex_center row">
+        </div>
+      <!-- footer end: ____________________________________________________ -->
+      </div>
+    <!-- container end: ___________________________________________________ -->
     </div>
-    <!-- title div: -->
-    <div id='title000'>
-    </div>
-    <!-- plot container: -->
-    <div id='container020'>
-    </div>
-  </div>
-</body>
+  <!-- body end: __________________________________________________________ -->
+  </body>
+<!-- html end: ____________________________________________________________ -->
 </html>
