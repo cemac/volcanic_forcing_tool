@@ -1079,11 +1079,13 @@ function plotCreateNewPlot(pCDiv, pCNa, pCTi, pCCS, pCSC,
       'margin': {'b': pCMab, 't': pCMat},
       'xaxis': {
         'range': [pCXmin, pCXmax],
-        'title': pCXTi
+        'title': pCXTi,
+        'zeroline': false
       },
       'yaxis': {
         'range': [pCYmin, pCYmax],
-        'title': pCYTi
+        'title': pCYTi,
+        'zeroline': false
       },
       'scene': {
         'aspectmode': 'cube',
@@ -1480,7 +1482,6 @@ function updateLayout() {
   container020DivOffset = container020Div.offsetTop;
   /* plot container height: */
   container020DivHeight = (container000DivHeight - container020DivOffset)*0.99;
-  container020Div.style['height'] = container020DivHeight.toString() + 'px';
   /* mask slider?: */
   var dMS = globalConfig['plotTypes'][plotType]['mask'];
   /* mask slider label?: */
